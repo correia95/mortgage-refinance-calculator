@@ -59,14 +59,17 @@ export default function App() {
     financeClosingCosts: state.financeCosts,
   }), [state]);
 
-  function shareLink() {
+  async function shareLink() {
     const params = encodeState(state);
     const url = `${window.location.origin}${window.location.pathname}?${params.toString()}`;
     window.history.replaceState(null, '', `?${params.toString()}`);
-    navigator.clipboard.writeText(url).then(() => {
+    try {
+      await navigator.clipboard.writeText(url);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    });
+    } catch {
+      /* ignore */
+    }
   }
 
   const verdict = result.breakevenMonths === null
