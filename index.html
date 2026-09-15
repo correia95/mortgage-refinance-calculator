@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0c4a6e" />
+
+    <title>Mortgage Refinance Calculator — break-even months & lifetime interest</title>
+    <meta
+      name="description"
+      content="Should you refinance your mortgage? Compare your current payment to a refinance offer, see how many months it takes to recoup the closing costs, and check whether it actually saves interest over the life of the loan. Runs entirely in your browser."
+    />
+    <link rel="canonical" href="https://mortgage-refinance-calculator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mortgage Refinance Calculator" />
+    <meta property="og:description" content="Break-even months and lifetime interest comparison for a mortgage refinance. Free, in your browser." />
+    <meta property="og:url" content="https://mortgage-refinance-calculator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://mortgage-refinance-calculator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mortgage Refinance Calculator" />
+    <meta name="twitter:description" content="Break-even months and lifetime interest comparison for a mortgage refinance. Free, in your browser." />
+    <meta name="twitter:image" content="https://mortgage-refinance-calculator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Mortgage Refinance Calculator",
+        "url": "https://mortgage-refinance-calculator.correia95.workers.dev/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Compares a current mortgage to a refinance offer: new payment, breakeven month for closing costs, and lifetime interest difference, entirely in the browser."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why would refinancing to a lower payment ever cost more overall?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the new loan resets the clock to a longer term, you pay interest for far more months, which can outweigh a lower rate. This calculator's lifetime interest comparison exists specifically to catch that."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What counts as breakeven on a refinance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The point where your accumulated monthly savings equal what you paid in closing costs. Stay in the home past that point and the refinance was worth it on cash flow; leave sooner and it wasn't."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this financial advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, it's a calculator for comparing the numbers you enter. Always get a real Loan Estimate from a lender before deciding, since taxes, insurance, PMI and points can all affect the real comparison."
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      .tt-nav { box-sizing: border-box; width: 100%; margin: 0; background: #f1f1f4; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      .tt-nav a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; text-decoration: none; color: #3730a3; font: 600 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .tt-nav a:hover { color: #1e1b4b; text-decoration: underline; }
+      .tt-nav svg { width: 14px; height: 14px; flex: none; }
+      @media (prefers-color-scheme: dark) {
+        .tt-nav { background: #15151b; border-bottom-color: rgba(255, 255, 255, 0.12); }
+        .tt-nav a { color: #c7d2fe; }
+        .tt-nav a:hover { color: #e0e7ff; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="tt-nav"><a href="https://tinytools.correia95.workers.dev/" aria-label="TinyTools home — all tools and games"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 2 11h3v9h5v-6h4v6h5v-9h3z"/></svg><span>TinyTools</span></a></nav>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This mortgage refinance calculator needs JavaScript to run the calculation in your browser.
+      </p>
+    </noscript>
+  </body>
+</html>

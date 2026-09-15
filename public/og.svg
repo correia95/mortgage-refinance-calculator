@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#071620"/>
+  <g transform="translate(850,150)">
+    <path d="M0 100 L100 20 L200 100" fill="none" stroke="#38bdf8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="30" y="100" width="140" height="90" fill="none" stroke="#38bdf8" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M65 145 h70" stroke="#e6eef4" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="90" y="160" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="62" font-weight="800" fill="#e6eef4" letter-spacing="-1">Mortgage Refinance</text>
+  <text x="90" y="225" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="62" font-weight="800" fill="#e6eef4" letter-spacing="-1">Calculator</text>
+  <text x="90" y="280" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="27" fill="#90a7b6">Break-even months &amp; lifetime interest</text>
+  <text x="90" y="480" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="24" fill="#e6eef4">See if refinancing is actually worth it</text>
+  <text x="90" y="524" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="22" fill="#90a7b6">Free · no sign-up · runs in your browser</text>
+</svg>
